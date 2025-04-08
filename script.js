@@ -106,3 +106,8 @@ document.getElementById('sexo').addEventListener('change', function () {
     camposDobras.style.display = 'none';
   }
 });
+
+function toggleMenu() {
+  const nav = document.querySelector('.nav-bar');
+  nav.classList.toggle('active');
+}
