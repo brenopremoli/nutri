@@ -32,7 +32,6 @@ body {
     align-items: center; /* Garante alinhamento vertical */
     gap: 0;
   }
-  
 
   .nav-button {
     display: flex;
