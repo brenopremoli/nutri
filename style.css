@@ -302,6 +302,53 @@ button:hover {
   cursor: pointer;
 }
 
+
+.service-list li {
+  margin: 10px 0;
+  display: flex;
+  gap: 12px;
+}
+
+.service-list i {
+  color: #13E053;
+  font-size: 22px;
+}
+
+
+#contato {
+  .icones-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 20px;
+  }
+  
+  .icones-sociais a {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .icones-sociais a:hover {
+    transform: scale(1.2);
+  }
+  
+  .icones-sociais i {
+    font-size: 40px;
+  }
+  
+  .fa-whatsapp {
+    color: #13E053;
+  }
+  
+  .fa-instagram {
+    color: #FF0057;
+  }
+  
+  .fa-tiktok {
+    color: black;
+  }
+}
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: contents;
