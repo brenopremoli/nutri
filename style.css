@@ -96,10 +96,9 @@ body {
   display: none;
   position: absolute;
   background-color: var(--color-white);
-  min-width: 127px;
+  min-width: 136px;
   box-shadow: 0px 8px 16px var(--color-shadow-hover);
   z-index: 1;
-  right: 0;
   top: 100%;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -316,6 +315,10 @@ button:hover {
 
 
 #contato {
+  > a {
+    text-decoration: none;
+  }
+
   .icones-sociais {
     display: flex;
     justify-content: center;
@@ -324,7 +327,6 @@ button:hover {
   }
   
   .icones-sociais a {
-    text-decoration: none;
     transition: transform 0.3s ease;
   }
   
