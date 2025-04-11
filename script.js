@@ -81,8 +81,8 @@ function classificarPercentualGordura(percentual, sexo) {
 function limparCampos() {
   const camposDobras = document.getElementById('camposDobras');
   camposDobras.style.display = 'none';
-  document.getElementById("form").reset(); // Limpa todos os campos do formulário
-  document.getElementById("resultado").innerHTML = ""; // Esvazia o resultado
+  document.getElementById("form").reset();
+  document.getElementById("resultado").innerHTML = ""; 
 }
 
 document.getElementById('sexo').addEventListener('change', function () {
@@ -107,7 +107,16 @@ document.getElementById('sexo').addEventListener('change', function () {
   }
 });
 
-function toggleMenu() {
-  const nav = document.querySelector('.nav-bar');
-  nav.classList.toggle('active');
+function destacarContato() {
+  const contatoSection = document.getElementById("contato");
+
+  if (contatoSection) {
+    setTimeout(() => {
+      contatoSection.classList.add("destaque");
+
+      setTimeout(() => {
+        contatoSection.classList.remove("destaque");
+      }, 500);
+    }, 0); 
+  }
 }

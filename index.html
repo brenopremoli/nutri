@@ -10,21 +10,16 @@
 </head>
 <body>
   <header class="header">
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button> <!-- ← Agora fora da nav-bar -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
   
     <nav class="nav-bar">
       <a href="index.html" class="nav-button">Home</a>
       <a href="calculadora.html" class="nav-button">Calculadora</a>
       <div class="dropdown">
-        <a href="#contato" class="nav-button">Fale comigo</a>
-        <div class="dropdown-content">
-          <a href="https://wa.me/5518981474549?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20consulta%20nutricional." target="_blank">WhatsApp <i class="fab fa-whatsapp" style="padding-left: 0.25rem;"></i></a>  
-          <a href="https://instagram.com/dressa_araujoo" target="_blank">Instagram <i class="fab fa-instagram" style="padding-left: 0.25rem;"></i></a>
-          <a href="https://www.tiktok.com/@andressaaraujo811" target="_blank">TikTok <i class="fab fa-tiktok" style="padding-left: 0.25rem;"></i></a>
-        </div>
+        <a href="#contato" class="nav-button" onclick="destacarContato()">Fale comigo</a>
       </div>
     </nav>
-  
+
     <a href="index.html" style="display: flex;">
       <img src="image/logo.png" alt="Logo da Nutricionista" class="logo" />
     </a>
@@ -56,16 +51,9 @@
     </a>
   </section>
 
-  <section id="calculadora" class="container">
-    <h1>Calculadora Nutricional</h1>
-    <p>Use a nossa ferramenta para obter uma estimativa das suas necessidades nutricionais:</p>
-    <a href="calculadora.html">
-      <button id="calculadora-btn">Acessar Calculadora <i class="fas fa-calculator" style="padding-left: 0.25rem; font-size: 1.2rem;"></i></button>
-    </a>
-  </section>
   <section id="contato" class="container">
     <h1>Redes Sociais</h1>
-    <p><p>Me acompanhe nas redes sociais e fique por dentro de dicas, conteúdos exclusivos e novidades!</p>
+    <p>Me acompanhe nas redes sociais e fique por dentro de dicas, conteúdos exclusivos e novidades!</p>
   </p>
     <div class="icones-sociais">
       <a href="https://wa.me/5518981474549?text=Olá%2C%20quero%20agendar%20uma%20consulta%20nutricional!" target="_blank">
@@ -78,6 +66,14 @@
         <i class="fab fa-tiktok"></i>
       </a>
     </div>
+  </section>
+
+  <section id="calculadora" class="container">
+    <h1>Calculadora Nutricional</h1>
+    <p>Use a nossa ferramenta para obter uma estimativa das suas necessidades nutricionais:</p>
+    <a href="calculadora.html">
+      <button id="calculadora-btn">Acessar Calculadora <i class="fas fa-calculator" style="padding-left: 0.25rem; font-size: 1.2rem;"></i></button>
+    </a>
   </section>
 
   <footer class="footer">
